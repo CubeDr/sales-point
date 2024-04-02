@@ -18,3 +18,5 @@ jobs:
       # Add steps to run your Python script below
       - name: Run Python Script
         run: python fetch-sales-point.py  
+        env:
+          super_secret: ${{ secrets.ACCESS_TOKEN }}
