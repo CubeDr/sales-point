@@ -38,6 +38,7 @@ def fetch(url):
 def append(score):
     # Authentication
     github_token = os.getenv('ACCESS_TOKEN')
+    print('access token length: ' + str(len(github_token))
     g = github.Github(github_token)
 
     repo = g.get_repo('CubeDr/sales-point')
