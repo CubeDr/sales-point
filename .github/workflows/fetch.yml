@@ -19,4 +19,4 @@ jobs:
       - name: Run Python Script
         run: python fetch-sales-point.py  
         env:
-          super_secret: ${{ secrets.ACCESS_TOKEN }}
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
