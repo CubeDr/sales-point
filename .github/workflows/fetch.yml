@@ -1,8 +1,6 @@
 name: Fetch scores
 
-on:
-  schedule:
-    - cron:  '0 15 * * *'  # Runs at 3 PM UTC (12 AM KST) every day
+on: workflow_dispatch
 
 jobs:
   fetch:
