@@ -44,7 +44,7 @@ def append(score):
     repo = g.get_repo('CubeDr/sales-point')
 
     contents = repo.get_contents('yes24.csv')
-    repo.update_file(contents.path, 'Test commit', f'{score}, {datetime.now()}\n{contents.decoded_content.decode()}', contents.sha)
+    repo.update_file(contents.path, 'Update yes24 sales point', f'{score}, {datetime.now()}\n{contents.decoded_content.decode()}', contents.sha)
 
     g.close()
 
