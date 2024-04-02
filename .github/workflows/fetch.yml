@@ -1,0 +1,16 @@
+name: Fetch scores
+
+on:
+  schedule:
+    - cron:  '0 15 * * *'  # Runs at 3 PM UTC (12 AM KST) every day
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest  # Replace with your desired OS if needed 
+
+    steps:
+      - uses: actions/checkout@v3  # Check out your repository code
+
+      # Add steps to run your Python script below
+      - name: Run Python Script
+        run: python fetch-sales-point.py  
